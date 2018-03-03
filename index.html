@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<base href="/">
+	<title>Madrigall</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+</head>
+<body>
+	<header class="header section section--padding">
+		<nav class="header__navigation header--no_padding_top">
+			<ul class="navigation">
+				<li class="navigation__item navigation__item--active">
+					<a href="#">About</a>
+				</li>
+				<li class="navigation__item">
+					<a href="#">Skills</a>
+				</li>
+				<li class="navigation__item">
+					<a href="#">Portfolio</a>
+				</li>
+				<li class="navigation__item">
+					<a href="#">Contacs</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="header__data-wrapper">
+			<div class="header__data-item header__data-item--flex header__data-item--center">
+				<div class="header__text-greeting">
+					<h3>Hello</h3>
+					<p>People!</p>
+				</div>
+			</div>
+			<div class="header__data-item header__data-item--flex header__data-item--center">
+				<div class="header__text-info">
+					<h3>I am Andrew</h3>
+					<p>Developer</p>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section id="about" class="section section--padding">
+		<div class="section__title section__title--margin">
+			<h2 class="section__title-text section__title--black">About me</h2>
+		</div>
+		<div class="education">
+			<h3 class="line--on_the_sides_big">Education</h3>
+			<p class="education__university">Kharkiv National University of Radioelectronics</p><br/>
+			<p>Faculty of Information and Analytical Technologies and Managment</p><br/>
+			<p>Department of Informatics</p>
+		</div>
+		<div class="skills">
+			<h3 class="line--on_the_sides_big">Skills</h3>
+			<ul>
+				<li class="skills__item">
+					Back-End<br/>
+					<ul>
+						<li>Php</li>
+						<li>Node.JS</li>
+					</ul>
+				</li>
+				<li class="skills__item">
+					Front-End<br/>
+					<ul>
+						<li>Html/Css</li>
+						<li>Javascript</li>
+						<li>Sass</li>
+						<li>Pug</li>
+						<li>bem-naming</li>
+					</ul>
+				</li>
+				<li class="skills__item">
+					Databases<br/>
+					<ul>
+						<li>Sql</li>
+						<li>design</li>
+					</ul>
+				</li>
+				<li class="skills__item">
+					Coding<br/>
+					<ul>
+						<li>C/C++</li>
+						<li>STL</li>
+						<li>Qt</li>
+					</ul>
+				</li>
+				<li class="skills__item">
+					CMS<br/>
+					<ul>
+						<li>Wordpress</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="skills__cv">
+			<a class="button button--white" href="#">CV</a>
+		</div>
+		<div class="experience">
+			<h3 class="line--on_the_sides_big">Experience in companies</h3>
+			<p>Nothing here :)</p>
+		</div>
+	</section>
+	<section class="section section--padding">
+		<div class="section__title section__title--margin">
+			<h2 class="section__title-text section__title--black">Portfolio</h2>
+		</div>
+		<div class="grid">
+			<div class="grid__item product">
+				<div class="product__item image">
+					<img src="https://cdn.stocksnap.io/img-thumbs/960w/YOFXCPYJJJ.jpg" alt="">
+				</div>
+				<div class="product__item description">
+					<header class="description__header">
+						<h3>Darling Pet</h3>
+						<p class="description__header-small">Poject description</p>
+					</header>
+					<footer class="description__footer description__footer--bottom">
+						<a class="button button--border" href="#">Visit</a>
+					</footer>
+				</div>
+			</div>
+			<div class="grid__item product">
+				<div class="product__item image">
+					<img src="https://cdn.stocksnap.io/img-thumbs/960w/41A4GNECBS.jpg" alt="">
+				</div>
+				<div class="product__item description">
+					<header class="description__header">
+						<h3>Launcher</h3>
+						<p class="description__header-small">Poject description</p>
+					</header>
+					<footer class="description__footer description__footer--bottom">
+						<a class="button button--border" href="#">Visit</a>
+					</footer>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section section--padding">
+		<div class="section__title section__title--margin">
+			<h2 class="section__title-text section__title--black">Contacts</h2>
+		</div>
+		<div class="contacts-wrapper">
+			<div class="contact__item">
+				<h3 class="line--on_the_sides_big">Write me a letter</h3>
+				<form action="" class="contacts">
+					<div class="contact__input">
+						<span class="input input--shoko">
+							<input class="input__field input__field--shoko" type="text" id="contact-name" />
+							<label class="input__label input__label--shoko" for="contact-name">
+								<span class="input__label-content input__label-content--shoko">First Name</span>
+							</label>
+							<svg class="graphic graphic--shoko" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+								<path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+								<path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"/>
+							</svg>
+						</span>
+					</div>
+					<div class="contact__input">
+						<span class="input input--shoko">
+							<input class="input__field input__field--shoko" type="text" id="contact-email" />
+							<label class="input__label input__label--shoko" for="contact-name">
+								<span class="input__label-content input__label-content--shoko">Email</span>
+							</label>
+							<svg class="graphic graphic--shoko" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+								<path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+								<path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"/>
+							</svg>
+						</span>
+					</div>
+					<div class="contact__input contact__message">
+						<span class="input input--shoko">
+							<input class="input__field input__field--shoko" type="text" id="contact-message" />
+							<label class="input__label input__label--shoko" for="contact-message">
+								<span class="input__label-content input__label-content--shoko">Message</span>
+							</label>
+							<svg class="graphic graphic--shoko" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+								<path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+								<path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"/>
+							</svg>
+						</span>
+					</div>
+					<br/>
+					<button type="submit" class="button button--bt button--border">Send</button>
+				</form>
+			</div>
+			<div class="contact__item">
+				<h3 class="line--on_the_sides_big">Also you can find me on</h3>
+				<ul class="contacts-list">
+					<li class="contacts-list__item">
+						<a href="#">GitHub</a>
+					</li>
+					<li class="contacts-list__item">
+						<a href="#">LinkedIn</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">Copyright &copy; 2018 madrigall. All rights reserved.</footer>
+	<link rel="stylesheet" href="libs/normalize.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,500i" rel="stylesheet">
+	<link rel="stylesheet" href="libs/input.css">
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="libs/classie.js"></script>
+	<script>!function(){var t;function e(t){classie.add(t.target.parentNode,"input--filled")}function i(t){""===t.target.value.trim()&&classie.remove(t.target.parentNode,"input--filled")}String.prototype.trim||(t=/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,String.prototype.trim=function(){return this.replace(t,"")}),[].slice.call(document.querySelectorAll("input.input__field")).forEach(function(t){""!==t.value.trim()&&classie.add(t.parentNode,"input--filled"),t.addEventListener("focus",e),t.addEventListener("blur",i)})}();</script>
+</body>
+</html>
