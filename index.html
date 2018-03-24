@@ -18,22 +18,29 @@
 	<!-- Custom Browsers Color Start -->
 	<meta name="theme-color" content="#000">
 	<!-- Custom Browsers Color End -->
+	
 </head>
 <body>
-	<header class="header section section--padding">
-		<nav class="header__navigation header--no_padding_top">
+	<div class="preloader">
+		<p data-content="Welcome"></p>
+	</div>
+	<header id="main" class="header section section--padding">
+		<div class="header__back-image">
+			<!-- <div class="header__overlay"></div> -->
+		</div>
+		<nav class="header__navigation header--no_padding_top header__navigation--nofixed">
 			<ul class="navigation">
-				<li class="navigation__item navigation__item--active">
-					<a href="#">About</a>
+				<li class="navigation__item">
+					<a href="#main">About</a>
 				</li>
 				<li class="navigation__item">
-					<a href="#">Skills</a>
+					<a href="#skills">Skills</a>
 				</li>
 				<li class="navigation__item">
-					<a href="#">Portfolio</a>
+					<a href="#portfolio">Portfolio</a>
 				</li>
 				<li class="navigation__item">
-					<a href="#">Contacs</a>
+					<a href="#contacts">Contacts</a>
 				</li>
 			</ul>
 		</nav>
@@ -41,86 +48,144 @@
 			<div class="header__data-item header__data-item--flex header__data-item--center">
 				<div class="header__text-greeting">
 					<h3>Hello</h3>
-					<p>People!</p>
+					<div class="text-animation">
+						<ul class="text-animation__container">
+							<li class="text-animation__item">World</li>
+							<li class="text-animation__item">Everyone</li>
+							<li class="text-animation__item">Users</li>
+							<li class="text-animation__item">Everybody</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 			<div class="header__data-item header__data-item--flex header__data-item--center">
 				<div class="header__text-info">
-					<h3>I am Andrew</h3>
+					<a class="header__hover" href="#skills">
+						<h3>I am Andrew</h3>
+					</a>
 					<p>Developer</p>
 				</div>
 			</div>
 		</div>
+		<!-- <div class="header__data-wrapper">
+			<div class="header__data-item header__data-item--flex header__data-item--justify_end header__data-item--order">
+				<div class="header__data--margin header__text-wrapper">
+					<div class="header__text">
+						<p class="header__text-data header__text-data--bordered"><span class="line--on_the_sides">Hi, I'm</span><br><span class="header__text-data--spacial">Andrew</span></p>
+						<p class="header__text-about">I am a student of Kharkov National University of Radio Electronics</p>
+					</div>
+				</div>
+			</div>
+			<div class="header__data-item header__data-item--flex header__data-item--flex_column">
+				<div class="header__author--position header__data-item--flex_shrink header__author">
+					<img src="https://andrewrublyov.github.io/assets/img/me.jpg" alt="">
+				</div>
+				<div class="header__data-item--align header__data-item--flex_shrink header__image">
+					<img src="images/brush_2.png" alt="images/brush.png">
+				</div>
+			</div>
+		</div> -->
 	</header>
 	<section id="about" class="section section--padding">
 		<div class="section__title section__title--margin">
-			<h2 class="section__title-text section__title--black">About me</h2>
+			<h2 class="section__title-text">About me</h2>
 		</div>
+	<!-- 	<div class="about-wrapper">
+			<div class="about__text">
+				<div class="about__text-border">
+					<h3 class="about__text-header">Lorem</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat est rerum quia omnis debitis, sint ut earum harum temporibus perferendis deleniti vero. A quasi, esse rerum nemo. Laudantium, facere, nemo!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae rerum quas delectus expedita. Omnis commodi, nisi voluptatibus quam voluptatem non qui porro reprehenderit error cupiditate. Id est, nobis dignissimos veritatis!</p>
+				</div>
+			</div>
+			<div class="about__text about__text--right">
+				<div class="about__text-border">
+					<h3 class="about__text-header">Lorem</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat est rerum quia omnis debitis, sint ut earum harum temporibus perferendis deleniti vero. A quasi, esse rerum nemo. Laudantium, facere, nemo!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae rerum quas delectus expedita. Omnis commodi, nisi voluptatibus quam voluptatem non qui porro reprehenderit error cupiditate. Id est, nobis dignissimos veritatis!</p>
+				</div>
+			</div>
+		</div> -->
 		<div class="education">
 			<h3 class="line--on_the_sides_big">Education</h3>
-			<p class="education__university">Kharkiv National University of Radioelectronics</p><br/>
+			<a href="http://nure.ua" target="_blank">
+				<p class="education__university">Kharkiv National University of Radioelectronics</p><br/>
+			</a>
 			<p>Faculty of Information and Analytical Technologies and Managment</p><br/>
 			<p>Department of Informatics</p>
 		</div>
-		<div class="skills">
+		<div id="skills" class="skills">
 			<h3 class="line--on_the_sides_big">Skills</h3>
 			<ul>
 				<li class="skills__item">
-					Back-End<br/>
-					<ul>
-						<li>Php</li>
-						<li>Node.JS</li>
-					</ul>
+					<span class="skills__item--align">
+						Back-End<br/>
+						<ul>
+							<li>Php</li>
+							<li>Node.JS</li>
+						</ul>
+					</span>
 				</li>
 				<li class="skills__item">
-					Front-End<br/>
-					<ul>
-						<li>Html/Css</li>
-						<li>Javascript</li>
-						<li>Sass</li>
-						<li>Pug</li>
-						<li>bem-naming</li>
-					</ul>
+					<span class="skills__item--align">
+						Front-End<br/>
+						<ul>
+							<li>Html/Css</li>
+							<li>Javascript</li>
+							<li>Sass</li>
+							<li>Pug</li>
+							<li>bem-naming</li>
+						</ul>
+					</span>
 				</li>
 				<li class="skills__item">
-					Databases<br/>
-					<ul>
-						<li>Sql</li>
-						<li>design</li>
-					</ul>
+					<span class="skills__item--align">
+						Databases<br/>
+						<ul>
+							<li>Sql</li>
+							<li>design</li>
+						</ul>
+					</span>
 				</li>
 				<li class="skills__item">
-					Coding<br/>
-					<ul>
-						<li>C/C++</li>
-						<li>STL</li>
-						<li>Qt</li>
-					</ul>
+					<span class="skills__item--align">
+						Coding<br/>
+						<ul>
+							<li>C/C++</li>
+							<li>STL</li>
+							<li>Qt</li>
+						</ul>
+					</span>
 				</li>
 				<li class="skills__item">
-					CMS<br/>
-					<ul>
-						<li>Wordpress</li>
-					</ul>
+					<span class="skills__item--align">
+						CMS<br/>
+						<ul>
+							<li>Wordpress</li>
+						</ul>
+					</span>
 				</li>
 			</ul>
 		</div>
 		<div class="skills__cv">
-			<a class="button button--white" href="#">CV</a>
+			<a class="button" href="#">View CV</a>
 		</div>
 		<div class="experience">
 			<h3 class="line--on_the_sides_big">Experience in companies</h3>
 			<p>Nothing here :)</p>
 		</div>
 	</section>
-	<section class="section section--padding">
+	<section id="portfolio" class="section section--padding">
 		<div class="section__title section__title--margin">
-			<h2 class="section__title-text section__title--black">Portfolio</h2>
+			<h2 class="section__title-text">Portfolio</h2>
 		</div>
 		<div class="grid">
 			<div class="grid__item product">
 				<div class="product__item image">
-					<img src="https://cdn.stocksnap.io/img-thumbs/960w/YOFXCPYJJJ.jpg" alt="">
+					<div class="image__wrapper">
+						<img src="https://cdn.stocksnap.io/img-thumbs/960w/YOFXCPYJJJ.jpg" alt="">
+						<div class="image__overlay"></div>
+					</div>
 				</div>
 				<div class="product__item description">
 					<header class="description__header">
@@ -128,29 +193,32 @@
 						<p class="description__header-small">Poject description</p>
 					</header>
 					<footer class="description__footer description__footer--bottom">
-						<a class="button button--border" href="#">Visit</a>
+						<a class="button" href="#">Visit</a>
 					</footer>
 				</div>
 			</div>
 			<div class="grid__item product">
 				<div class="product__item image">
-					<img src="https://cdn.stocksnap.io/img-thumbs/960w/41A4GNECBS.jpg" alt="">
+					<div class="image__wrapper">
+						<img src="http://akteam.16mb.com/img/launcher/002.png" alt="Launcher">
+						<div class="image__overlay"></div>
+					</div>
 				</div>
 				<div class="product__item description">
 					<header class="description__header">
 						<h3>Launcher</h3>
-						<p class="description__header-small">Poject description</p>
+						<p class="description__header-small">This project was written in C++ using Qt</p>
 					</header>
 					<footer class="description__footer description__footer--bottom">
-						<a class="button button--border" href="#">Visit</a>
+						<a class="button" href="#">Visit</a>
 					</footer>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="section section--padding">
+	<section id="contacts" class="section section--padding">
 		<div class="section__title section__title--margin">
-			<h2 class="section__title-text section__title--black">Contacts</h2>
+			<h2 class="section__title-text">Contacts</h2>
 		</div>
 		<div class="contacts-wrapper">
 			<div class="contact__item">
@@ -182,6 +250,7 @@
 					</div>
 					<div class="contact__input contact__message">
 						<span class="input input--shoko">
+							<!-- <textarea class="contact__area input__field input__field--shoko" name="message" id="contact-message" cols="30" rows="10"></textarea> -->
 							<input class="input__field input__field--shoko" type="text" id="contact-message" />
 							<label class="input__label input__label--shoko" for="contact-message">
 								<span class="input__label-content input__label-content--shoko">Message</span>
@@ -193,32 +262,153 @@
 						</span>
 					</div>
 					<br/>
-					<button type="submit" class="button button--bt button--border">Send</button>
+					<button type="submit" class="button button--bt">Send</button>
 				</form>
 			</div>
 			<div class="contact__item">
 				<h3 class="line--on_the_sides_big">Also you can find me on</h3>
 				<ul class="contacts-list">
 					<li class="contacts-list__item">
-						<a href="#">GitHub</a>
+						<a href="https://github.com/madrigall" target="_blank">GitHub<i class="fab fa-github"></i></a>
 					</li>
 					<li class="contacts-list__item">
-						<a href="#">LinkedIn</a>
+						<a href="https://www.linkedin.com/in/madrigall-" target="_blank">LinkedIn<i class="fab fa-linkedin-in"></i></a>
 					</li>
 				</ul>
 			</div>
 		</div>
 	</section>
 	<footer class="footer">Copyright &copy; 2018 madrigall. All rights reserved.</footer>
+	<script src="libs/classie.js"></script>
+	<script>
+
+		window.onload = function() {
+			setTimeout(hidePreloader, 1200)
+			setTimeout(deletePreload, 2000)
+
+		}
+		window.onscroll = function() {
+			var scrolled = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+			var menu = document.getElementsByClassName("header__navigation");
+
+			if(scrolled > 70)
+			{
+				menu[0].classList.remove("header__navigation--nofixed");
+				menu[0].classList.add("header__navigation--border", "header__navigation--fixed");
+			}
+			else
+			{
+				menu[0].classList.remove("header__navigation--border", "header__navigation--fixed");
+				menu[0].classList.add( "header__navigation--nofixed");
+			}
+			var clientTop = document.documentElement.clientTop || document.body.clientTop || 0;
+
+			[].forEach.call(document.getElementsByClassName('navigation__item'), function(v,i,a) {
+				var data = v.getElementsByTagName("a");
+				data = data[0].getAttribute("href");
+				
+				var pos = document.getElementById(data.slice(1)).getBoundingClientRect();
+				var top  = pos.top +  scrolled - clientTop
+
+				if ((top <= scrolled) && ((top + pos.height) > scrolled)) 
+				{
+					v.classList.remove("navigation__item--active");
+					v.classList.add("navigation__item--active");
+				}
+				else
+				{
+					v.classList.remove("navigation__item--active");
+				}
+			});
+			
+		}
+
+		function hidePreloader(){
+			var loader = document.getElementsByClassName("preloader");
+			loader[0].style.opacity = "0";
+			var html = document.getElementsByTagName("html");
+			html[0].style.overflow = "visible";
+			console.log("loaded")
+		}
+		function deletePreload(){
+			var loader = document.getElementsByClassName("preloader");
+			loader[0].remove();
+			console.log("deleted")
+		}
+		var linkNav = document.querySelectorAll('[href^="#"]'),
+		    V = 0.4; 
+
+		for (var i = 0; i < linkNav.length; i++) 
+		{
+		    linkNav[i].addEventListener('click', function(e) {
+		        e.preventDefault();
+
+		        var w = window.pageYOffset,
+		            hash = this.href.replace(/[^#]*(.*)/, '$1');
+
+		        t = document.querySelector(hash).getBoundingClientRect().top,
+		            start = null;
+
+		        requestAnimationFrame(step);
+
+		        function step(time) 
+		        {
+		            if (start === null) 
+		            	start = time;
+
+		            var progress = time - start,
+		                r = (t < 0 ? Math.max(w - progress/V, w + t) : Math.min(w + progress/V, w + t));
+
+		            window.scrollTo(0,r);
+
+		            if (r != w + t) 
+		                requestAnimationFrame(step)
+		            else 
+		                location.hash = hash
+		        }
+
+		    }, false);
+		}
+	</script>
+	<script>
+		(function() {
+			// trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
+			if (!String.prototype.trim) {
+				(function() {
+					// Make sure we trim BOM and NBSP
+					var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+					String.prototype.trim = function() {
+						return this.replace(rtrim, '');
+					};
+				})();
+			}
+			[].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
+				// in case the input is already filled..
+				if( inputEl.value.trim() !== '' ) {
+					classie.add( inputEl.parentNode, 'input--filled' );
+				}
+				// events:
+				inputEl.addEventListener( 'focus', onInputFocus );
+				inputEl.addEventListener( 'blur', onInputBlur );
+			} );
+			function onInputFocus( ev ) {
+				classie.add( ev.target.parentNode, 'input--filled' );
+			}
+			function onInputBlur( ev ) {
+				if( ev.target.value.trim() === '' ) {
+					classie.remove( ev.target.parentNode, 'input--filled' );
+				}
+			}
+		})();
+	</script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+
+
 	<link rel="stylesheet" href="libs/normalize.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,500i" rel="stylesheet">
 	<link rel="stylesheet" href="libs/input.css">
 	<link rel="stylesheet" href="css/main.min.css">
-	<script src="libs/classie.js"></script>
-	<script>
-	!function(){var t;function e(t){classie.add(t.target.parentNode,"input--filled")}function i(t){""===t.target.value.trim()&&classie.remove(t.target.parentNode,"input--filled")}String.prototype.trim||(t=/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,String.prototype.trim=function(){return this.replace(t,"")}),[].slice.call(document.querySelectorAll("input.input__field")).forEach(function(t){""!==t.value.trim()&&classie.add(t.parentNode,"input--filled"),t.addEventListener("focus",e),t.addEventListener("blur",i)})}();
-	</script>
 </body>
 </html>
