@@ -226,10 +226,10 @@
 		<div class="contacts-wrapper">
 			<div class="contact__item">
 				<h3 class="line--on_the_sides_big">Write me a letter</h3>
-				<form action="/" class="contacts">
+				<form name="sendmes" action="/" class="contacts">
 					<div class="contact__input">
 						<span class="input input--shoko">
-							<input class="input__field input__field--shoko" type="text" id="contact-name" />
+							<input class="input__field input__field--shoko" type="text" required id="contact-name" />
 							<label class="input__label input__label--shoko" for="contact-name">
 								<span class="input__label-content input__label-content--shoko">First Name</span>
 							</label>
@@ -241,7 +241,7 @@
 					</div>
 					<div class="contact__input">
 						<span class="input input--shoko">
-							<input class="input__field input__field--shoko" type="text" id="contact-email" />
+							<input class="input__field input__field--shoko" type="text" required id="contact-email" />
 							<label class="input__label input__label--shoko" for="contact-name">
 								<span class="input__label-content input__label-content--shoko">Email</span>
 							</label>
@@ -253,7 +253,7 @@
 					</div>
 					<div class="contact__input contact__message">
 						<span class="input input--shoko">
-							<input class="input__field input__field--shoko" type="text" id="contact-message" />
+							<input class="input__field input__field--shoko" type="text" required id="contact-message" />
 							<label class="input__label input__label--shoko" for="contact-message">
 								<span class="input__label-content input__label-content--shoko">Message</span>
 							</label>
@@ -264,7 +264,7 @@
 						</span>
 					</div>
 					<br/>
-					<button type="submit" class="button button--bt">Send</button>
+					<button type="submit" id="sendMessage" class="button button--bt">Send</button>
 				</form>
 			</div>
 			<div class="contact__item">
